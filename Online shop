@@ -1,0 +1,79 @@
+background-color: #fdd835; /* Темнее желтый */
+            transform: scale(1.05); /* Легкое увеличение при наведении */
+        }
+        .contact {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #ffeb3b; /* Яркий желтый */
+            text-align: center;
+            padding: 10px;
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .container {
+                flex-direction: column;
+            }
+            .item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Магазин Сумок
+    </header>
+
+    <nav>
+        <a href="#products">Товары</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <div id="products" class="container">
+        <div class="item">
+            <img src="bag1.jpg" alt="Сумка 1">
+            <h2>Сумка 1</h2>
+            <p>Цена: 5000 ₽</p>
+            <button onclick="location.href='https://example.com/order1'">Заказать</button>
+        </div>
+        <div class="item">
+            <img src="bag2.jpg" alt="Сумка 2">
+            <h2>Сумка 2</h2>
+            <p>Цена: 6500 ₽</p>
+            <button onclick="location.href='https://example.com/order2'">Заказать</button>
+        </div>
+        <div class="item">
+            <img src="bag3.jpg" alt="Сумка 3">
+            <h2>Сумка 3</h2>
+            <p>Цена: 7000 ₽</p>
+            <button onclick="location.href='https://example.com/order3'">Заказать</button>
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <h2>Контактная информация</h2>
+        <p>Email: example@shop.ru</p>
+        <p>Телефон: +7 (900) 123-45-67</p>
+        
+        <!-- Форма для отправки сообщений -->
+        <form id="contact-form" action="send-email.php" method="post">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш email" required>
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <footer>
+        © 2024 Магазин Сумок
+    </footer>
+
+</body>
+</html>
